@@ -1,0 +1,6 @@
+<button (click)="onToggleDetails()">Display Details</button>
+<p *ngIf="showSecretMessage">I love pizza</p>
+<p></p>
+<br>
+<p *ngFor="let logItem of log" [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text': logItem >= 5}">Clicked {{logItem}} times</p>
